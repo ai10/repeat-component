@@ -1,8 +1,16 @@
 <template name="home">
     <div class="container">
         <div class="row">
-            <h1>#repeat things =  #for things by <a href="github.com/charlesjshort/repeat-component">charlesjshort&nbsp;<i class="ion-social-github"></i></a></h1>
-            <h2 class="well">#each with prototype scope <p class="well"> $parent, $index, $first, $last, $odd, $even, $middle</p></h2> 
+            <h1>repeat-component for Meteor</h1>
+            <h2 class="well"><a href="http://github.com/charlesjshort/repeat-component"><i class="ion-social-github"></i>&nbsp;charlesjshort&nbsp;/&nbsp;repeat-component</a></h2>
+            <div class="well">
+                <h2>extended Meteor #each block helper</h2>
+                <ol class="list-group">
+                <li class="list-group-item">Nested prototype $parent scope</li> 
+                <li class="list-group-item">Helper attributes: $parent, $index, $first, $last, $odd, $even, $middle</li>
+                <li class="list-group-item">Synonymous #for things = #repeat things</li>
+            </ol>
+            </div> 
         </div>
         <div class="row">
           {{#repeat things }}
@@ -36,5 +44,8 @@
         </div>
           {{/repeat}}
       </div>
-    </div><!-- /.container !-->
+  <div class="row">
+      <small class='pull-left'>MIT License</small>
+  </div>
+</div><!-- /.container !-->
 </template>
