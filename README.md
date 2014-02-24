@@ -1,4 +1,4 @@
-repeat-component
+repeat-component for Meteor-UI (shark branch)
 ================
 
 ng-like {{#repeat things }} block helper for Meteor-UI {{/repeat}}
