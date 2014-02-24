@@ -51,13 +51,6 @@ ng-like {{#repeat things }} block helper for Meteor-UI {{/repeat}}
 ```
 *example/home.litcoffee*
 ```coffeescript
-Template.home.heading = ->
-         @label or 'Header.'
-
-     Template.home.last = ->
-         if @$index is @$last.$index then return true
-         false
-
      Template.home.indexRoot = ->
          protoroot = (child, pR)->
              cp = child?.__proto__
