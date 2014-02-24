@@ -1,0 +1,8 @@
+{
+    "name": "repeat-component",
+    "description": "extended #each block helper with prototypical scope inheritance and attribute helpers.",
+    "homepage": "https://github.com/charlesjshort/repeat-component",
+    "author": "Charles Short",
+    "version": "0.1.0",
+    "git": "https://github.com/charlesjshort/repeat-component.git"
+}
