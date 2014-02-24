@@ -2,14 +2,6 @@ Repeat component example
 ===
 
 
-
-     Template.home.heading = ->
-         @label or 'Header.'
-
-     Template.home.last = ->
-         if @$index is @$last.$index then return true
-         false
-
      Template.home.indexRoot = ->
          protoroot = (child, pR)->
              cp = child?.__proto__
