@@ -1,6 +1,6 @@
 repeat-component for Meteor-UI
 ====
-(shark branch)
+(shark branch) repeat-component.meteor.com
 ---
 ng-like {{#repeat things }} nestable block helper for Meteor-UI {{/repeat}}
  - equivalent #for and #repeat block helpers extending #each native helper
