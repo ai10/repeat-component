@@ -1,5 +1,12 @@
 <template name="repeat">
-{{#each items .. }}
+{{#each __items .. }}
+{{> content }}
+{{else}}
+{{> elseContent }}
+{{/each}}
+</template>
+<template name="for">
+{{#each __items .. }}
 {{> content }}
 {{else}}
 {{> elseContent }}

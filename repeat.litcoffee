@@ -1,20 +1,23 @@
 Repeat helper
 ===
 
-     Template.repeat.items = (parent)->
-         console.log 'items', this, parent
+     Template.repeat.__items = (parent)->
          $first = this[0]
          index = 0
          end = this.length-1
          $last = this[end]
          items = _.map this, (i)->
              obj = {}
-             if typeof i is 'object'
+             if i is null
+                 obj.$value = null
+             else if typeof i is 'object'
                  obj = i
              else
                  obj.$value = i
              
-             obj.$parent = obj.__proto__ = parent
+             unless parent is null
+                 obj.__proto__ = parent
+             
              if 0 < index < end
                  obj.$middle = true
              else
@@ -33,3 +36,6 @@ Repeat helper
              obj
 
          items
+
+     Template.for = Template.repeat
+
