@@ -1,4 +1,6 @@
-BROKEN - repeat-component for Meteor-UI 
+BROKEN don't use
+---
+- repeat-component for Meteor-UI 
 ====
 (shark branch) [repeat-component.meteor.com](http://repeat-component.meteor.com)
 ---
